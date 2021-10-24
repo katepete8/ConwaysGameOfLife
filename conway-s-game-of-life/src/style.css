@@ -1,0 +1,66 @@
+html {
+  background-color: #222222;
+  font-family: Verdana, san-serif;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+li {
+  margin: 5px;
+}
+
+.inline {
+  display: inline;
+}
+
+.cell {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  background-color: #555;
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-auto-flow: column;
+  margin-left: 400px;
+}
+
+#gameBoard {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  
+}
+
+#sidePanel {
+  margin-left: 50px;
+  max-width: 350px;
+  border-radius: 15px;
+  background-color: #666666;
+  text-align: center;
+  font-size: 14px;
+}
+
+#rules {
+  text-align: left;
+  margin-left: 0px;
+  margin-right: 15px;
+}
+
+#info {
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#conway {
+  justify-content: center;
+  text-align: center;
+}
+
+#buttons {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
