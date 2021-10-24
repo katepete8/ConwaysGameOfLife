@@ -1,0 +1,41 @@
+<html> 
+  <h1>Conway's Game of Life</h1>
+  <div id="container" class="grid-container">
+    <div id="gameBoard" class="grid-item"></div>
+    <div id="sidePanel" class="grid-item">
+      <h2>Game Rules:</h2>
+      <ul id="rules">
+        <li>Any live cell with fewer than two live neighbours dies, as if by underpopulation.</li>
+        <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+        <li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
+        <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+      </ul>
+      
+      <h2>Learn More:</h2>
+      <div id="info">
+        <p>Developed by John Conway in 1970, the <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Game of Life</a> is a cellular automaton that is Turing Complete.</p>
+        <figure id="conway">
+          <img src=https://www.princeton.edu/sites/default/files/styles/scale_1440/public/images/2020/04/20090310_ConwayKochen_DJA_066-copy.jpg?itok=BbmXyoCQ id="conwayImage" alt="portrait of John Conway" width=200px>
+          <figcaption id="conwayCaption">Portrait of John Conway</figcaption>
+        </figure>
+      </div>
+      
+      
+    </div>
+  </div>
+  
+        <div id=buttons>
+        <button id="restart" onclick="newBoard(false)">Randomize</button>
+        <button id="pause" onclick="pauseToggle()">Pause/Play</button>
+        <button id="blank" onclick="newBoard(true)">Blank</button>
+      </div>
+
+      <p class="inline">Generation: </p><div id="genCounterDisplay" class="inline"></div><br>
+
+      <label for="gameSpeed">Time between generations (ms):</label>
+      <input type="range" id="gameSpeed" value="2" min=1 max=30><div id="speedIndicator" class="inline"></div><br>
+
+      <label for "boardSize">Board size:</label>
+      <input type="range" id="boardSize" value="50" min="10" max="200" step="10" oninput="updateBoardSize()"><div id="sizeIndicator" class="inline"></div><br>
+  
+</html>
